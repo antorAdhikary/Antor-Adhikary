@@ -67,6 +67,9 @@ header{
 	letter-spacing: 1px;
 
 }
+.nav-cv {
+	display: none;
+}
 #menu-icon{
 	font-size: 35px;
 	color: var(--text-color);
@@ -333,7 +336,7 @@ header.sticky{
 	bottom: 48%;
 	opacity: 1;
 }
-.service-content{
+/* .service-content{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(400px, auto));
 	grid-gap: 2rem;
@@ -352,10 +355,10 @@ header.sticky{
 	height: 65px;
 	width: 65px;
 	background: #f75124;
-	padding: 15px;
+	/* padding: 15px;
 	border-radius: 50%;
 	margin-bottom: 20px;
-}
+} 
 .s.s-tow img{
 	background: #baebcd;
 }
@@ -383,7 +386,7 @@ header.sticky{
 .row:hover{
 	will-change: transform;
 	transform: perspective(1000px) rotateX(4.80deg) rotateY(10.23deg) scale3d(1.05,1.05,1.05);
-}
+} */
 
 .cta-box{
 	display: grid;
@@ -393,8 +396,6 @@ header.sticky{
 	margin-top: 5rem;
 	text-align: center;
 }
-
-
 
 .row-2{
 	display: flex;
@@ -589,18 +590,18 @@ header.sticky{
 	}
 	.navlist{
 		position: absolute;
-		top: -600px;
+		top: -700px;
 		left: 0;
 		right: 0;
 		flex-direction: column;
 		background: var(--main-color);
-		text-align: right;
+		text-align: center;
 		transition: all .40s;
 	}
 	.navlist a{
 		display: block;
 		padding: 1.2rem;
-		margin: 1.5rem;
+		margin: 1.3rem;
 		border-right: 2px solid var(--bg-color);
 		color: var(--bg-color);
 	}
@@ -647,9 +648,32 @@ header.sticky{
 		padding: 65px 3%;
 		transition: .3s;
 	}
+	.row-2{
+		display: block;
+		align-items: center;
+		padding: 0 20px;
+	}
+	.row-2 .skills{
+		margin-bottom: 50px;
+	}
 }
 @media (max-width: 540px){
-	.contact .action form input[type="email"] {
-		width: 310px;
+	.top-btn {
+		display: none;
+	}
+	.sub-box {
+		text-align: center;
+	}
+	.contact .action form input[type="text"] {
+		width: 300px;
+	}
+}
+@media (max-width: 350px){
+		
+	.top-btn {
+		display: none;
+	}
+	.contact .action form input[type="text"] {
+		width: 250px;
 	}
 }
