@@ -121,9 +121,9 @@ section{
 .home-text .home-name {
 	color: var(--main-color);
 }
-.home-text h5{
+.home-text h2{
 	margin-bottom: 23px;
-	font-size: 19px;
+	font-size: 22px;
 	font-weight: 500;
 }
 span{
@@ -251,7 +251,6 @@ header.sticky{
 	line-height: 28px;
 	margin-bottom: 45px;
 }
-
 .heading{
 	text-align: center;
 }
